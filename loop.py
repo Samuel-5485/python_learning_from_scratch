@@ -36,3 +36,11 @@ def python(n):
     for _ in range(n):
         print("Python")
 main()
+
+# List
+students = ['Sami', 'Harry', 'Cherry']
+for student in students:
+    print(student)
+
+for i in range(len(students)):
+    print(i + 1, students[i])
