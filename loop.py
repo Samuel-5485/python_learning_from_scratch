@@ -55,5 +55,48 @@ print(students["Python"])
 print(students["Vscode"])
 print(students["Github"])
 
+for student in students: 
+    print(student, students[student], sep=", ")  #sep means space
+# dict2
+students = [
+    {
+        "name": "Alice", 
+        "house": "Sheger",
+        "job": "developer"
+    },
+    {
+        "name": "Cherry",
+        "house": "Addis Ababa",
+        "job": "Ai enginner"
+    }
+
+]
 for student in students:
-    print(student, students[student], sep=", ")
+    print(student["name"], student["house"], student["job"], sep=", ")
+
+# column
+def main():
+    print_column(3)
+
+def print_column(height):
+    for _ in range(height):
+        print("#")
+
+main()
+
+# row
+def main():
+    print_row(3)
+
+def print_row(width):
+    print("*" * width)
+
+main()
+# square
+def main():
+    print_square(3)
+
+def print_square(size):
+    for i in range(size):
+        print("*" * size)
+main()
