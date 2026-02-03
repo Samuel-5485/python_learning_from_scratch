@@ -26,13 +26,13 @@ main()
 
 # Exception handling: function, pass
 def main():
-    z = get_int()
+    z = get_int("What's z? ")
     print(f"z is {z}")
 
-def get_int():
+def get_int(prompt):
     while True:
         try:
-            return int(input("What's z? "))
+            return int(input(prompt))
         except ValueError:
             pass
         
