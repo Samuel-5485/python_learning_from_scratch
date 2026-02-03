@@ -25,5 +25,12 @@ print(type(x))
 pi = 3.14
 radius = 4
 area = pi *radius*radius
+circumference = 2*pi*radius
 print("Area of circle is:", area)
+print("circumference of circle is:", circumference)
+
+# comments in python
+# This is a single line comment
+""" This is a multi-lne comment"""
+
 
