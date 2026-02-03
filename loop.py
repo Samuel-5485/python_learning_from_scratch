@@ -44,3 +44,16 @@ for student in students:
 
 for i in range(len(students)):
     print(i + 1, students[i])
+
+# Dictionary
+students = {
+    "Python": "language",
+    "Vscode": "code editor",
+    "Github": "sourse code storage"
+}
+print(students["Python"])
+print(students["Vscode"])
+print(students["Github"])
+
+for student in students:
+    print(student, students[student], sep=", ")
