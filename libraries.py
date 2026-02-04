@@ -1,13 +1,15 @@
 import random 
 import statistics
 import sys
+import cowsay
+
 """
 coin = random.choice(["heads", "tails"])
 print(coin)
 """
 # random.randint
-number = random.randint(1, 9)
-print(number)
+# number = random.randint(1, 9)
+# print(number)
 
 #random.shuffle
 """
@@ -35,9 +37,14 @@ elif len(sys.argv) > 2:
 # else:
 
 print("hello, my name is", sys.argv[1])
-"""
+
 if len(sys.argv) < 2:
     sys.exit("Too few arguments")
 for arg in sys.argv[1: ]:
     print("hello, my name is", arg)
+"""
+if len(sys.argv) == 2:
+    print(cowsay.cowsay("hey, " + sys.argv[1]))
 
+# name = " ".join(sys.argv[1:])
+# print(cowsay.cowsay(f"hey, {name}"))
