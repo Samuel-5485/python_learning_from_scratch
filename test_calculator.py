@@ -4,7 +4,7 @@ def main():
     test_square()
 def test_square():
    try:
-      assert square(2) == 4
+      assert square(2) == 4  
    except AssertionError:
       print("2 squared was not 4")
    try:
@@ -20,7 +20,7 @@ def test_square():
         print("2 square was not 4")
     if square(3) != 9:
         print("3 square was not 9")""" 
-    # AssertionError arises why? 
+    # AssertionError arises why? what's the usage of assert
     #  new technique
 
 if __name__ == "__main__":
